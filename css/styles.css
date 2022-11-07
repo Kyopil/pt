@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+/* Navegation Menu Start */
+
+header
+{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+header.sticky
+{
+    background-color: #0f0f0f;
+}
+
+.navegation h1
+{
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
+.navegation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+.nav-item
+{
+    padding: 10px;
+    display: inline-block;
+}
+
+.nav-item a
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-item a:hover 
+{
+    color: rgba(21, 255, 0, 0.87);
+}
+
+.btn-github
+{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: rgba(21, 255, 0, 0.87);
+    transition: 0.5s;
+}
+
+.btn-github:hover
+{
+    background-color: rgba(24, 206, 7, 0.959);
+    color: rgba(245, 245, 245, 0.959);
+}
+
+/* Navegation Menu End */
+
+/* Main Content Start */
+
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.overview
+{
+    border-left: solid 3px rgba(24, 206, 7, 0.959);
+    padding-left: 10px;
+}
+
+.overview h1
+{
+    color: white;
+    font-size: 35px;
+}
+
+.overview h3
+{
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 20px;
+}
+
+.overview p
+{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 450px;
+}
+
+.avatar
+{
+    width: 150px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: solid 3px rgba(172, 255, 47, 0);
+}
+
+.avatar:hover
+{
+    padding: 10px;
+    border: solid 3px rgba(24, 206, 7, 0.959);
+}
+
+@media (max-width: 800px){
+    .home
+    {
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 10px;
+    }
+
+    .avatar
+    {
+        margin-top: 10px;
+    }
+}
+
+.projects
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.library
+{
+    text-align: center;
+}
+
+.library h2
+{
+    color: white;
+    padding: 20px;
+}
+
+.background
+{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 100%;
+    height: 180px;
+}
+
+.card-project
+{
+    width: 190px;
+    height: 250px;
+    margin: 3px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform:
+    perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    filter: blur(2px);
+    opacity: 0.5;
+    transition: 0.6s ease all;
+    z-index: 0;
+}
+
+.card-project:hover
+{
+    transform:
+    perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.card-project h4
+{
+    color: rgba(0, 0, 0, 0.774);
+}
+
+footer
+{
+    text-align: center;
+    padding: 35px;
+}
+
+footer h5
+{
+    color: rgba(245, 245, 245, 0.932);
+}
+
+footer a
+{
+    font-size: 15px;
+    margin: 5px;
+    color: rgba(24, 206, 7, 0.959);
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+/* Main Content End */
