@@ -212,9 +212,22 @@ header.sticky
 
 footer
 {
-    text-align: center;
+    background-color: #0f0f0f;
+    text-align: left;
     padding: 35px;
+    width: 100%;
+    height: 100%;
 }
+
+footer .container
+{
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 footer h5
 {
@@ -224,12 +237,18 @@ footer h5
 footer a
 {
     font-size: 15px;
-    margin: 5px;
+    padding: 5px;
     color: rgba(24, 206, 7, 0.959);
 }
 
 footer a:hover
 {
     text-decoration: underline;
+}
+
+.socials .icon-social
+{
+    width: 30px;
+    display: inline-block;
 }
 /* Main Content End */
